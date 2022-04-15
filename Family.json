@@ -1,0 +1,30 @@
+[
+    {
+        "Name": "Rijaya",
+        "Age": "36",
+        "Favourite game": "Sudoku",
+        "Dreams": "Sofware Developer/Engineer",
+        "Favourite Color": "Turqoise"
+    },
+    {
+        "Name": "Jimala",
+        "Age": "35",
+        "Favourite game": "Candy Crush",
+        "Dreams": "Bussiness Woman",
+        "Favourite Color": "Coffee Colour"
+    },
+    {
+        "Name": "Sabiya",
+        "Age": "31",
+        "Favourite game": "Jewel in the palace",
+        "Dreams": "Fashion Designer",
+        "Favourite Color": "Hot Pink"
+    },
+    {
+        "Name": "Hawawu",
+        "Age": "16",
+        "Favourite game": "Ampe",
+        "Dreams": "Accountant",
+        "Favourite Color": "Pink"
+    }
+]
