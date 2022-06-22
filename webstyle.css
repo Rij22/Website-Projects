@@ -6,10 +6,10 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0, 0, 0, 0.5)50%), url(pencil.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0, 0, 0, 0.5)50%), url(Rijayatu.Razak.jpg);
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 200vh;
 }
 
 .navbar{
