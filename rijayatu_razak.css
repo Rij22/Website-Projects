@@ -8,12 +8,13 @@ html{
 }
 
 
+
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(59, 198, 182, 0.9);
+    background-color: #87ceeb;
     position: sticky;
     top: 0;
 
@@ -37,14 +38,14 @@ html{
     
 }
 .navbar ul li a:hover{
-    background-color: white;
+    background-color: #87ceeb;
     color: black;
     box-shadow: 0 0 10px black;
 }
 #home{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(coding1.jpg);
     height: 840px;
     justify-content: center;
     align-items: center;
@@ -56,7 +57,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url('coding1.jpg') no-repeat center center/cover;
+    visibility: visible;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -67,12 +68,34 @@ html{
     flex-direction: column;
     /*border: 1px solid white; */
     align-items: center;
+    color: #87ceeb;
     position: absolute;
     top: 30%;
     right: 10%;
+    box-shadow: 0, 0, 10px #87ceeb;
+    animation: animate 5s linear infinite;
 }
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #87ceeb;
+        text-shadow: none;
+
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #87ceeb,
+        0 0 20px #87ceeb,
+        0 0 40px #87ceeb,
+        0 0 80px #87ceeb,
+        0 0 160px #87ceeb;
+    }
+}
+
 .headings{
-    font-family: century;
+    font-family: monospace;
     font-size: 3rem;
     text-align: center;
     margin: 40px 0px;
@@ -80,7 +103,7 @@ html{
 .btn{
     padding: 10px 35px;
     background-color: transparent;
-    color: white;
+    color: #87ceeb;
     outline: none;
     transition: .6s ease;
 
@@ -99,7 +122,6 @@ html{
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
-    background-color: #F18C8E;
     
 }
 #pic{
@@ -112,7 +134,6 @@ html{
 #intro{
     display: flex;
     flex-direction: column;
-    background-color: #568EA6;
     text-align: justify;
     padding: 10px;
 
@@ -126,8 +147,7 @@ html{
 #portfolio{
     display: flex;
     flex-direction: column;
-    background-color: #41766f;
-    color: white;
+    color: black;
     align-items: center;
     padding: 20px;
     
@@ -149,7 +169,6 @@ html{
     padding: 20px;
     align-items: center;
     color: black;
-    background-color: rgba(205, 220, 57, 0.7);
 }
 .row{
     display: flex;
@@ -162,26 +181,42 @@ html{
     width: 350px;
     height: 450px;
     border: 1px solid black;
-    margin: 10px;
+    margin: 20px 30px;
     align-items: center;
-    text-align: justify;
+    justify-content: center;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgba(158, 45, 45)50%, #F9A0A3 50%);
     background-size: 100% 200%;
-    transition: all .8s;
+    transition: all 0.5s;
 
 }
 .box:hover{
-    background-position: left bottom;
-    color: white;
-    border: none;
-    box-shadow: 0 0 20px #011946;
+    transform: translate(-20);
+
+}
+
+#services box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff00);
+}
+#services box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, darkblue, skyblue);
+    filter: blur(30px);
 }
 .box img{
     width: 80px;
     height: 80px;
-    background-color: white;
     padding: 10px;
 }
 
@@ -190,14 +225,13 @@ html{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    background-color: #022D5F;
-    color: white;
+    color: black;
     padding: 20px;
 }
 #contact a{
     display: flex;
+    font-size: large;
     flex-direction: column;
-    background-color: #F68E92;
     text-align: justify;
     padding: 10px;
     align-items: center;
@@ -208,8 +242,7 @@ html{
 #video{
     display: flex;
     flex-direction: column;
-    background-color: #011946;
-    color: white;
+    color: black;
     align-items: center;
     padding: 20px;
     
