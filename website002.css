@@ -6,11 +6,24 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(23, 50, 10, 0)50%,rgba(23, 50, 10, 0)50%), url(pexels-ann-h-1762851.jpg);
-    background-position: left;
+    background: linear-gradient(to top, rgba(23, 50, 10, 0)50%,rgba(23, 50, 10, 0)50%), url(Images&videos/pencil.jpg);
+    background-position: center;
     background-size: cover;
     height: 200vh;
 }
+.ABOUT ME{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    text-align: justify;
+    font-family: Verdana;
+    margin: 0px auto;
+    width: 80%;
+    height: 100vh;
+    
+    
+} 
 .navbar{
     width: 12000px;
     height: 75px;
