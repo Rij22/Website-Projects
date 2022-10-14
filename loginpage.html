@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form{
+        width: 500px;
+        margin: auto;
+        padding: 100px;
+        font-size: 20px;
+        background: lightblue;
+        color: blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    form .button{
+    height: 45px;
+    margin: 45px 0;
+    
+}
+form .button input{
+    height: 130%;
+    width: 130%;
+    outline: none;
+    color: green;
+    background: rgba(3, 169, 244, 0.7);
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+form .button input:hover{
+    background: lightgreen;
+}
+  </style> 
+</head>
+<body>
+  <form container="">
+    <div class="container">
+        <div class="title">Login</div> <br>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter Email" required>
+                </div> <br>
+      <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter Password" required>
+                </div>
+      <!--<div class="button">
+                            <p>
+                                <input type="submit" value="submit" name="">
+                                
+                            </p>
+                        </div>-->
+                        <div class="button">
+                            <ul>
+                                <li>
+                                    <a href="successpage.html">submit</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    </form>
+</body>
+</html>
