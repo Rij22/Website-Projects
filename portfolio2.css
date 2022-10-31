@@ -8,6 +8,15 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    background: linear-gradient(
+        110deg, 
+        #12232e 0%, 
+        #350d6a 50%, 
+        #105c85 50%,
+        #753402 100%
+        )
+        ;
+    color: #0db4b9;
     /*color: lightyellow;*/
     
 }
@@ -15,11 +24,11 @@ body{
 .menu{
     width: 20%;
     height: 100vh;
-    background-color: tomato;
+    background: linear-gradient(110deg, #ec4949 0%, #885353 50%, #8e270b 50%, #1c0701 100%);
     float: left;
     border: 3px solid;
     border-radius: 5px;
-    border-color: gray;
+    border-color: #e76d89;
     position: fixed;
     z-index: 100;
     
@@ -31,12 +40,13 @@ body{
 }
 img{
     border: 2px solid white;
-    width: 150px; 
-    height: 150px; 
+    border-radius: 80px;
+    width: 70%;
+    height: 90%; 
     border-radius: 50%;
     margin: 40px auto 0 auto;
     display: block;
-    background-color: gray;
+    background-color: #1d1145;
     
     
 }
@@ -58,7 +68,7 @@ ul li a{
     text-decoration: none;
     align-items: flex-end;
     padding-left: 5%;
-    color: #fff;
+    color: #0db4b9;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
@@ -75,7 +85,7 @@ ul li a:hover{
     height: auto;
     margin-left: 20%;
     padding: 4rem;
-    border: 2px solid tomato;
+    border: 2px solid #e76d89;
     border-radius: 5px;
     z-index: 100;
     float: left;
@@ -91,14 +101,19 @@ ul li a:hover{
     font-family: Arial;
     margin: 15px auto;
     width: 80%;
-    height: 100vh;
+    height: 100%;
     
     
 } 
 h1{
     font-size: 36px;
     font-weight: 700;
-    color: tomato;
+    color: #e76d89;
+}
+.image {
+    width: 15%;
+    text-align: right;
+
 }
 p{
     font-size: 24px;
@@ -107,27 +122,77 @@ p{
     text-align: justify;
     display: flex;
     width: 80%;
-    height: 100vh;
+    height: 70%;
     flex-direction: column;
     margin: 0px;
+    padding: 35px;
 }
 #SERVICE{
-    font-family: Arial;
-    text-align: justify;
-    display: flex;
-    margin: 0px;
-    flex-direction: column;
-    width: 80%;
-    height: 100vh;
+    font-size: 25px;
+    width: 100%;
+    color: #e76d89;
     
     
 }
-h2{
+/*h2{
+    font-family: Arial;
+    margin: 0px;
+    width: 80%;
+    height: 50%;
+    color: tomato;
+    
+    
+    
+}*/
+
+.tags {
+    padding-left: 0;
+    display: block;
+    color: #0db4b9;
+    padding: 35px;
+    
+    
+
+}
+
+ul .tag{
+  --tag-color: var(--gray);
+  letter-spacing: 1px;
+  border: 1px solid var(--tag-color);
+  outline: 1px solid #e76d89;
+  margin: 8px 8px 8px 0;
+  padding: 12px 16px;
+  font-size: 1.0rem;
+  font-weight: normal;
+  line-height: 1.0;
+  transition: transform .2s;
+  display: inline-block;
+  position: relative;
+}
+
+.tag:before {
+  content: "";
+  border: 1px solid #e76d89;
+  position: absolute;
+  inset: -3px;
+}
+
+.tag:hover {
+  --tag-color: var(--primary);
+  color: #e76d89;
+  outline-color: #e76d89;
+}
+
+
+
+
+/*h2{
     font-size: 36px;
     font-weight: 700;
     color: tomato;
+    
 }
-p{
+/*.portfolio h2{
     font-size: 24px;
     font-weight: 500;
     line-height: 45px;
@@ -137,25 +202,97 @@ p{
     height: 100vh;
     flex-direction: column;
     margin: 0px;
-}
+}*/
 #PORTFOLIO{
-    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 45px;
     text-align: justify;
     display: flex;
-    margin: 0px;
+    width: 100%;
+    height: 70%;
     flex-direction: column;
-    width: 80%;
-    height: 100vh;
+    color: #e76d89;
+    padding: 2px;
+    
+    
+    
   
 }
-ol{
-    display: inline-block;
-    /*border: 1px solid tomato;*/
-    padding: 20px;
-    font-size: 20PX;
-    font-family: Arial;
+.portfolio h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #0db4b9;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 20px;
+    border-color: #45a049;
+}
+/*.portfolio h2 ol{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
     text-align: justify;
+    display: flex;
+    width: 80%;
+    height: 70%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 35px;
+    background-color: blue;
 
+}
+.portfolio h2 ol li{
+    font-size: 25px;
+    display: flex;
+    
+}*/
+
+.portfolio {
+  /*gap: var(--gap);*/
+  grid-template-columns: 300px 1fr;
+  margin-bottom: 100px;
+  display: grid;
+  color: #0db4b9;
+}
+
+@media (min-width: 601px) {
+  .portfolio:nth-child(2n+1) {
+    grid-template-columns: 1fr 300px;
+  }
+
+  .portfolio:nth-child(2n+1) .portfolio-screenshot {
+    order: 1;
+  }
+}
+
+.portfolio-screenshot {
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-screenshot {
+    width: 175px;
+    height: 175px;
+  }
+}
+.services{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: justify;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 2px;
+    color: #0db4b9;
+   
 }
 .fa {
     padding: 20px;
@@ -170,10 +307,16 @@ ol{
     color: grey;
 }
 footer{
-    text-align: left;
+    text-align: right;
     padding: 3px;
-    /*background-color: darksalmon;*/
-    color: gray;
+    background-color: #e1b382;
+    color: black;
+}
+footer .number{
+    text-align: left;
+}
+footer .reserve{
+    text-align: left;
 }
 .container {
   border-radius: 5px;
@@ -191,15 +334,16 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
+#CONTACT a{
+    border: 35px;
+    background-color: #0db4b9;
+    color: white;
+    width: 15%;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-input[type=submit]:hover {
-  background-color: #45a049;
+#CONTACT a:hover {
+  background-color: #8d3e06;
 }
 
