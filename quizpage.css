@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(https://thumbs.dreamstime.com/z/female-baker-bakery-19380991.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-attachment: fixed;
+}
+#header .glass{
+    background: linear-gradient(rgba(220, 112, 208, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px, solid, rgba(117, 141, 238, 0.18);
+    box-shadow: 0, 8px, 32px, 0, rgba(218, 237, 92, 0.37);
+    position: relative;
+    color: rgb(1, 1, 8);
+    
+    font-size: 30px;
+    background-position: center;
+}
+
+.topnav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 25px;
+    align-items: flex-start;
+    top: 0;
+    background-color: #e256c9;
+    position: sticky;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-container{
+    display: block;
+}

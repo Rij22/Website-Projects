@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
     background: linear-gradient(
         110deg, 
-        #12232e 0%, 
+        #22608a 0%, 
         #350d6a 50%, 
         #105c85 50%,
         #753402 100%
@@ -38,7 +38,7 @@ body{
     height: max-content;
     margin: 15px auto;
 }
-img{
+.nav-image img{
     border: 2px solid white;
     border-radius: 80px;
     width: 70%;
@@ -110,11 +110,25 @@ h1{
     font-weight: 700;
     color: #e76d89;
 }
-.image {
-    width: 15%;
-    text-align: right;
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    /*top: 0;*/
+    background: linear-gradient(110deg, #eae590 0%, #99b4e3 50%, #d18ff2 50%, #df323b 100%) ;
+    /*position: fixed;*/
+    /*z-index: 1;*/
+}
+nav img{
+    width: 5%;
+
 
 }
+nav img:hover{
+    width: 15%;
+}
+
 p{
     font-size: 24px;
     font-weight: 500;
@@ -145,6 +159,33 @@ p{
     
 }*/
 
+.btn--link{
+  all: unset;
+  width: 15%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #45a049;
+  outline: revert;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .18s, opacity .18s;
+  display: inline-block;
+  color: white;
+  padding: 12px;
+}
+
+.btn--link:hover{
+    background-color: #8d3e06;
+}
+
+
+/*.btn--link:after {
+  content: "";
+  border: 5px solid var(--primary);
+  height: 4px;
+  width: 100%;
+  display: inline-block;
+}*/
 .tags {
     padding-left: 0;
     display: block;
