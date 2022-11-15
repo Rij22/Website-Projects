@@ -47,7 +47,7 @@
         } else {
             document.write("<b>Unknown Car</b>");
             
-        } */
+        } 
             
         
 
@@ -67,9 +67,34 @@
             document.write("<b>True</b>");
         } else {
             document.write("<b>Incorrect age</b>");
+        } */
+
+// the use of Switch case makes your code look simpler and it is used in place of "ELSE IF"
+
+        var grade = 'A'
+        document.write("Entering swicth block<br />");
+        switch(grade) {
+            case 'A': document.write("Excellent<br />");
+            break;
+
+            case 'B': document.write("Good<br />");
+            break;
+
+            case 'C': document.write("Pass<br />");
+            break;
+
+            case 'D': document.write("Average<br />");
+            break;
+
+            case 'E': document.write("Credit<br />");
+            break;
+
+            case 'F': document.write("Fail<br />");
+            break;
+
+            default: document.write("Unknown<br />");
+
         }
-
-
 
     </script>
 </body>
