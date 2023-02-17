@@ -1,0 +1,22 @@
+{
+  "name": "gsap-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gsap.html",
+  "scripts": {
+    "start": "parcel gsap.html --open",
+    "build": "parcel build gsap.html"
+  },
+  "dependencies": {
+    "gsap": "3.9.1",
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
